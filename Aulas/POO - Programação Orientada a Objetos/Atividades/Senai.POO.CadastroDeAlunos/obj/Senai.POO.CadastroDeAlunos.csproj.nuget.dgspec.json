@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\Senai.POO.CadastroDeAlunos.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\Senai.POO.CadastroDeAlunos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\Senai.POO.CadastroDeAlunos.csproj",
+        "projectName": "Senai.POO.CadastroDeAlunos",
+        "projectPath": "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\Senai.POO.CadastroDeAlunos.csproj",
+        "packagesPath": "C:\\Users\\aryel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\aryel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
