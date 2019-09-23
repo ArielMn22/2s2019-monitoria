@@ -9,3 +9,14 @@ C:\Users\aryel\Documents\Code-Repositories\2s2019-monitoria\Aulas\POO - Programa
 C:\Users\aryel\Documents\Code-Repositories\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.AssemblyInfo.cs
 C:\Users\aryel\Documents\Code-Repositories\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.dll
 C:\Users\aryel\Documents\Code-Repositories\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.pdb
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\bin\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.deps.json
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\bin\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.runtimeconfig.json
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\bin\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.runtimeconfig.dev.json
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\bin\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.dll
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\bin\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.pdb
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.csprojAssemblyReference.cache
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.csproj.CoreCompileInputs.cache
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.AssemblyInfoInputs.cache
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.AssemblyInfo.cs
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.dll
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.CadastroDeAlunos\obj\Debug\netcoreapp2.2\Senai.POO.CadastroDeAlunos.pdb

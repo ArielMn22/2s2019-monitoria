@@ -1,0 +1,11 @@
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\bin\Debug\netcoreapp2.2\Senai.POO.Pilares.deps.json
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\bin\Debug\netcoreapp2.2\Senai.POO.Pilares.runtimeconfig.json
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\bin\Debug\netcoreapp2.2\Senai.POO.Pilares.runtimeconfig.dev.json
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\bin\Debug\netcoreapp2.2\Senai.POO.Pilares.dll
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\bin\Debug\netcoreapp2.2\Senai.POO.Pilares.pdb
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\obj\Debug\netcoreapp2.2\Senai.POO.Pilares.csprojAssemblyReference.cache
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\obj\Debug\netcoreapp2.2\Senai.POO.Pilares.csproj.CoreCompileInputs.cache
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\obj\Debug\netcoreapp2.2\Senai.POO.Pilares.AssemblyInfoInputs.cache
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\obj\Debug\netcoreapp2.2\Senai.POO.Pilares.AssemblyInfo.cs
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\obj\Debug\netcoreapp2.2\Senai.POO.Pilares.dll
+C:\Users\33747821839\Documents\Ariel\2s2019-monitoria\Aulas\POO - Programação Orientada a Objetos\Atividades\Senai.POO.Pilares\obj\Debug\netcoreapp2.2\Senai.POO.Pilares.pdb

@@ -8,9 +8,10 @@ namespace Senai.POO.CadastroDeAlunos
         static void Main(string[] args)
         {
             //Declarando Objeto
-            AlunoModel aluno1 = new AlunoModel();
+            AlunoModel aluno1 = new AlunoModel(); // Declarando uma nova instância
 
-            Console.Clear(); // Limpa a tela
+            // Limpa a tela
+            Console.Clear(); 
 
             // Lendo nome
             System.Console.WriteLine("Insira seu nome:");
