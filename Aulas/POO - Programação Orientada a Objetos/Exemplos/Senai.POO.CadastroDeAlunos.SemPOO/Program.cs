@@ -1,5 +1,4 @@
-using System;
-using Senai.POO.CadastroDeAlunos.Models;
+﻿using System;
 
 namespace Senai.POO.CadastroDeAlunos
 {
@@ -7,32 +6,33 @@ namespace Senai.POO.CadastroDeAlunos
     {
         static void Main(string[] args)
         {
-            //Declarando Objeto
-            AlunoModel aluno1 = new AlunoModel();
+            // Declaranda variáveis
+            string nome, curso;
+            int rg = 0, idade = 0;
 
             Console.Clear(); // Limpa a tela
 
             // Lendo nome
             System.Console.WriteLine("Insira seu nome:");
-            aluno1.Nome = Console.ReadLine();
+            nome = Console.ReadLine();
             
             // Lendo nome do curso
             System.Console.WriteLine("Insira o nome de seu curso: ");
-            aluno1.Curso = Console.ReadLine();
+            curso = Console.ReadLine();
             
             // Lendo RG
             System.Console.WriteLine("Insira seu RG: ");
-            aluno1.Rg = int.Parse(Console.ReadLine());
+            rg = int.Parse(Console.ReadLine());
             
             // Lendo idade
             System.Console.WriteLine("Insira sua idade: ");
-            aluno1.Idade = int.Parse(Console.ReadLine());
+            idade = int.Parse(Console.ReadLine());
 
             // Exibindo as informações
-            System.Console.WriteLine("Nome: " + aluno1.Nome);
-            System.Console.WriteLine("Curso: " + aluno1.Curso);
-            System.Console.WriteLine("RG: " + aluno1.Rg);
-            System.Console.WriteLine("Idade: " + aluno1.Idade);
+            System.Console.WriteLine("Nome: " + nome);
+            System.Console.WriteLine("Curso: " + curso);
+            System.Console.WriteLine("RG: " + rg);
+            System.Console.WriteLine("Idade: " + idade);
         }
     }
 }

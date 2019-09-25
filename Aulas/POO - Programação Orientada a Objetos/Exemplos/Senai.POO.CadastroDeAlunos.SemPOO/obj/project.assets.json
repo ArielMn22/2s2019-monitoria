@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\Senai.POO.CadastroDeAlunos.csproj",
+      "projectUniqueName": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Exemplos\\Senai.POO.CadastroDeAlunos.SemPOO\\Senai.POO.CadastroDeAlunos.csproj",
       "projectName": "Senai.POO.CadastroDeAlunos",
-      "projectPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\Senai.POO.CadastroDeAlunos.csproj",
+      "projectPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Exemplos\\Senai.POO.CadastroDeAlunos.SemPOO\\Senai.POO.CadastroDeAlunos.csproj",
       "packagesPath": "C:\\Users\\33747821839\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.CadastroDeAlunos\\obj\\",
+      "outputPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Exemplos\\Senai.POO.CadastroDeAlunos.SemPOO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
