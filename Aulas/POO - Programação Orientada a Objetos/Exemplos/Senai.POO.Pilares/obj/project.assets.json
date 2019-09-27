@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.Pilares\\Senai.POO.Pilares.csproj",
+      "projectUniqueName": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Exemplos\\Senai.POO.Pilares\\Senai.POO.Pilares.csproj",
       "projectName": "Senai.POO.Pilares",
-      "projectPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.Pilares\\Senai.POO.Pilares.csproj",
+      "projectPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Exemplos\\Senai.POO.Pilares\\Senai.POO.Pilares.csproj",
       "packagesPath": "C:\\Users\\33747821839\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Atividades\\Senai.POO.Pilares\\obj\\",
+      "outputPath": "C:\\Users\\33747821839\\Documents\\Ariel\\2s2019-monitoria\\Aulas\\POO - Programação Orientada a Objetos\\Exemplos\\Senai.POO.Pilares\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

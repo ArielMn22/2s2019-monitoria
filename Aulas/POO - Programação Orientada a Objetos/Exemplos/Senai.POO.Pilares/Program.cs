@@ -1,5 +1,6 @@
 ﻿using System;
 using Senai.POO.Pilares.Models;
+using Senai.POO.Pilares.Controllers;
 
 namespace Senai.POO.Pilares
 {
@@ -7,9 +8,17 @@ namespace Senai.POO.Pilares
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            CarroController carro = new CarroController();
+            CarroEletricoController carroEletrico = new CarroEletricoController();
 
-            CarroModel.Mover();
+            carro.Ligar();
+
+            carro.Acelerar();
+            carro.Freiar();
+
+            carroEletrico.CarregarBateria(15);
+            carroEletrico.CarregarBateria(15);
+            System.Console.WriteLine(carroEletrico.StatusBateria());
         }
     }
 }
