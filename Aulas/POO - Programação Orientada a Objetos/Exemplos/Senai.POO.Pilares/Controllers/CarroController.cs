@@ -8,6 +8,9 @@ namespace Senai.POO.Pilares.Controllers
         // Declarando objeto do tipo CarroModel
         CarroModel carro = new CarroModel();
 
+        // Declarando objeto do tipo MotorModel
+        MotorModel motor = new MotorModel();
+
         /// <summary>
         /// Acelera o carro se o mesmo estiver ligado
         /// </summary>
@@ -58,13 +61,13 @@ namespace Senai.POO.Pilares.Controllers
         public void CadastrarMotor()
         {
             System.Console.WriteLine("Insira quantos cavalos tem o motor:");
-            carro.Motor.Cavalos = int.Parse(Console.ReadLine());
+            motor.Cavalos = int.Parse(Console.ReadLine());
 
             System.Console.WriteLine("Insira quantos cilindros tem o carro:");
-            carro.Motor.Cilindros = int.Parse(Console.ReadLine());
+            motor.Cilindros = int.Parse(Console.ReadLine());
 
             System.Console.WriteLine("Insira o nome do cilindro do carro:");
-            carro.Motor.Pistao = Console.ReadLine();
+            motor.Pistao = Console.ReadLine();
         }
     }
 }

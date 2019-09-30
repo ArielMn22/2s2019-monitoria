@@ -6,6 +6,9 @@ namespace Senai.POO.Pilares.Controllers
     {
         /// Instanciando Objeto CarroEletricoModel
         CarroEletricoModel carro = new CarroEletricoModel();
+        
+        // Estamos declarando o objeto 'motor'
+        MotorModel motor = new MotorModel();
 
         /// <summary>
         /// Declarando método de carregar bateria

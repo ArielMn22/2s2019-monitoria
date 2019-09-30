@@ -20,6 +20,8 @@ namespace Senai.POO.Pilares
             carroEletrico.CarregarBateria(15);
 
             System.Console.WriteLine(carroEletrico.StatusBateria());
+
+            carro.CadastrarMotor();
         }
     }
 }
