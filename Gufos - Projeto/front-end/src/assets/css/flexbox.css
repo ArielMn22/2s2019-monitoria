@@ -1,0 +1,32 @@
+.conteudoPrincipal-dados {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.conteudoPrincipal-dados-link {
+  width: 23%;
+  margin: 1%;
+}
+
+.conteudoPrincipal-dados-link:nth-child(4n) {
+  margin-right: 0;
+}
+
+.titulo-tipo-evento {
+  text-align: center;
+}
+
+/* .conteudoPrincipal-dados-link:nth-child(4n + 1) {
+  margin-left: 0;
+} */
+
+/*parte mobile*/
+@media (max-width: 768px) {
+  .conteudoPrincipal-dados {
+    flex-direction: column;
+  }
+
+  .conteudoPrincipal-dados-link {
+    width: 100%;
+  }
+}

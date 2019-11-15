@@ -1,0 +1,615 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>backend</name>
+    </assembly>
+    <members>
+        <member name="M:backend.Controllers.LoginController.Login(backend.ViewModels.LoginViewModel)">
+            <summary>
+            Realiza login no sistema
+            </summary>
+            <param name="login">Email e Senha para realizar login</param>
+            <returns>Retorna um token com os dados do usuário logado</returns>
+        </member>
+        <member name="T:backend.Domains.Categoria">
+            <summary>
+            Classe responsável pelo modelo da categoria
+            </summary>
+        </member>
+        <member name="T:backend.Interfaces.ICategoriaRepository">
+            <summary>
+            Classe responsável por definir os métodos da Categoria
+            </summary>
+        </member>
+        <member name="M:backend.Interfaces.ICategoriaRepository.Listar">
+            <summary>
+            Lista todas as categorias
+            </summary>
+            <returns>Retorna uma lista de categorias</returns>
+        </member>
+        <member name="M:backend.Interfaces.ICategoriaRepository.BuscarPorID(System.Int32)">
+            <summary>
+            Busca uma categoria através do seu ID
+            </summary>
+            <param name="id">Identificador específico da categoria</param>
+            <returns>Retorna uma categoria buscada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ICategoriaRepository.Salvar(backend.Domains.Categoria)">
+            <summary>
+            Cadastra uma nova categoria
+            </summary>
+            <param name="categoria">Objeto categoria com os dados que serão cadastrados</param>
+            <returns>Retorna uma categoria cadastrada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ICategoriaRepository.Alterar(backend.Domains.Categoria)">
+            <summary>
+            Altera uma categoria existente
+            </summary>
+            <param name="categoria">Objeto categoria com os dados que serão atualizados</param>
+            <returns>Retorna uma categoria atualizada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ICategoriaRepository.Excluir(backend.Domains.Categoria)">
+            <summary>
+            Deleta uma categoria existente
+            </summary>
+            <param name="categoria">Objeto categoria com os dados que serão deletados</param>
+            <returns>Retorna uma categoria deletada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ICategoriaRepository.FiltrarPorNome(System.String)">
+            <summary>
+            Lista todas as categorias que atendem ao filtro
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de categorias filtradas</returns>
+        </member>
+        <member name="M:backend.Interfaces.ICategoriaRepository.Ordenar">
+            <summary>
+            Lista todas as categorias de forma ordenada
+            </summary>
+            <returns>Retorna uma lista de categorias ordenada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IEventoRepository.Listar">
+            <summary>
+            Lista todos os eventos
+            </summary>
+            <returns>Retorna uma lista de eventos</returns>
+        </member>
+        <member name="M:backend.Interfaces.IEventoRepository.BuscarPorID(System.Int32)">
+            <summary>
+            Busca um evento através do seu ID
+            </summary>
+            <param name="id">Identificador específico do evento</param>
+            <returns>Retorna um evento buscado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IEventoRepository.Salvar(backend.Domains.Evento)">
+            <summary>
+            Cadastra um novo evento
+            </summary>
+            <param name="evento">Objeto evento com os dados que serão cadastrados</param>
+            <returns>Retorna um evento cadastrado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IEventoRepository.Alterar(backend.Domains.Evento)">
+            <summary>
+            Altera um evento existente
+            </summary>
+            <param name="evento">Objeto evento com os dados que serão atualizados</param>
+            <returns>Retorna um evento atualizado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IEventoRepository.Excluir(backend.Domains.Evento)">
+            <summary>
+            Deleta um evento existente
+            </summary>
+            <param name="evento">Objeto evento com os dados que serão deletados</param>
+            <returns>Retorna um evento deletado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IEventoRepository.FiltrarPorNome(System.String)">
+            <summary>
+            Lista todas os eventos que atendem ao filtro
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de eventos filtrados</returns>
+        </member>
+        <member name="M:backend.Interfaces.IEventoRepository.Ordenar">
+            <summary>
+            Lista todos os eventos de forma ordenada
+            </summary>
+            <returns>Retorna uma lista de eventos ordenada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ILocalizacaoRepository.Listar">
+            <summary>
+            Lista todas as localizacoes
+            </summary>
+            <returns>Retorna uma lista de localizacoes</returns>
+        </member>
+        <member name="M:backend.Interfaces.ILocalizacaoRepository.BuscarPorID(System.Int32)">
+            <summary>
+            Busca uma localizacao através do seu ID
+            </summary>
+            <param name="id">Identificador específico da localizacao</param>
+            <returns>Retorna uma localizacao buscada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ILocalizacaoRepository.Salvar(backend.Domains.Localizacao)">
+            <summary>
+            Cadastra uma nova localizacao
+            </summary>
+            <param name="localizacao">Objeto localizacao com os dados que serão cadastrados</param>
+            <returns>Retorna uma localizacao cadastrada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ILocalizacaoRepository.Alterar(backend.Domains.Localizacao)">
+            <summary>
+            Altera uma localizacao existente
+            </summary>
+            <param name="localizacao">Objeto localizacao com os dados que serão atualizados</param>
+            <returns>Retorna uma localizacao atualizada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ILocalizacaoRepository.Excluir(backend.Domains.Localizacao)">
+            <summary>
+            Deleta uma localizacao existente
+            </summary>
+            <param name="localizacao">Objeto localizacao com os dados que serão deletados</param>
+            <returns>Retorna uma localizacao deletada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ILocalizacaoRepository.FiltrarPorNome(System.String)">
+            <summary>
+            Lista todas as localizacoes que atendem ao filtro
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de localizacoes filtradas</returns>
+        </member>
+        <member name="M:backend.Interfaces.ILocalizacaoRepository.Ordenar">
+            <summary>
+            Lista todos as localizacoes de forma ordenada
+            </summary>
+            <returns>Retorna uma lista de localizacoes ordenada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IPresencaRepository.Listar">
+            <summary>
+            Lista todas as presencas
+            </summary>
+            <returns>Retorna uma lista de presencas</returns>
+        </member>
+        <member name="M:backend.Interfaces.IPresencaRepository.BuscarPorID(System.Int32)">
+            <summary>
+            Busca uma preenca através do seu ID
+            </summary>
+            <param name="id">Identificador específico da presenca</param>
+            <returns>Retorna uma presenca buscada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IPresencaRepository.Salvar(backend.Domains.Presenca)">
+            <summary>
+            Cadastra uma nova presenca
+            </summary>
+            <param name="presenca">Objeto presenca com os dados que serão cadastrados</param>
+            <returns>Retorna um presenca cadastrada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IPresencaRepository.Alterar(backend.Domains.Presenca)">
+            <summary>
+            Altera um presenca existente
+            </summary>
+            <param name="presenca">Objeto presenca com os dados que serão atualizados</param>
+            <returns>Retorna um presenca atualizada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IPresencaRepository.Excluir(backend.Domains.Presenca)">
+            <summary>
+            Deleta uma presenca existente
+            </summary>
+            <param name="presenca">Objeto presenca com os dados que serão deletados</param>
+            <returns>Retorna um presenca deletada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IPresencaRepository.FiltrarPorNome(System.String)">
+            <summary>
+            Lista todas as presencas que atendem ao filtro
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de presencas filtradas</returns>
+        </member>
+        <member name="M:backend.Interfaces.IPresencaRepository.Ordenar">
+            <summary>
+            Lista todos os presencas de forma ordenada
+            </summary>
+            <returns>Retorna uma lista de presencas ordenada</returns>
+        </member>
+        <member name="M:backend.Interfaces.ITipoUsuarioRepository.Listar">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Retorna uma lista com os tipos de usuário</returns>
+        </member>
+        <member name="M:backend.Interfaces.ITipoUsuarioRepository.BuscarPorID(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do seu id
+            </summary>
+            <param name="id">Identificador específico do tipo de usuário</param>
+            <returns>Retorna um tipo de usuário buscado</returns>
+        </member>
+        <member name="M:backend.Interfaces.ITipoUsuarioRepository.Salvar(backend.Domains.TipoUsuario)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="tipoUsuario">Objeto tipo usuário com os dados que serão cadastrados</param>
+            <returns>Retorna um tipo usuário cadastrado</returns>
+        </member>
+        <member name="M:backend.Interfaces.ITipoUsuarioRepository.Alterar(backend.Domains.TipoUsuario)">
+            <summary>
+            Altera um tipo usuário existente
+            </summary>
+            <param name="tipoUsuario">Objeto tipo usuário com os dados que serão atualizados</param>
+            <returns>Retorna um tipo usuário atualizado</returns>
+        </member>
+        <member name="M:backend.Interfaces.ITipoUsuarioRepository.Excluir(backend.Domains.TipoUsuario)">
+            <summary>
+            Deleta uma tipo usuário existente
+            </summary>
+            <param name="tipoUsuario">Objeto tipo usuário com os dados que serão deletados</param>
+            <returns>Retorna um tipo usuário deletado</returns>
+        </member>
+        <member name="M:backend.Interfaces.ITipoUsuarioRepository.FiltrarPorNome(System.String)">
+            <summary>
+            Lista todos os tipos de usuário que atendem ao filtro
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de tipo usuário filtrados</returns>
+        </member>
+        <member name="M:backend.Interfaces.ITipoUsuarioRepository.Ordenar">
+            <summary>
+            Lista todos os tipos de usuário de forma ordenada
+            </summary>
+            <returns>Retorna uma lista de tipo usuário ordenada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.Listar">
+            <summary>
+            Lista todos os usuarios
+            </summary>
+            <returns>Retorna uma lista de usuarios</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.BuscarPorID(System.Int32)">
+            <summary>
+            Busca um usuario através do seu ID
+            </summary>
+            <param name="id">Identificador específico do usuario</param>
+            <returns>Retorna um usuario buscado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.Salvar(backend.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuario
+            </summary>
+            <param name="usuario">Objeto usuario com os dados que serão cadastrados</param>
+            <returns>Retorna um usuario cadastrado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.Alterar(backend.Domains.Usuario)">
+            <summary>
+            Altera um usuario existente
+            </summary>
+            <param name="usuario">Objeto usuario com os dados que serão atualizados</param>
+            <returns>Retorna um usuario atualizado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.Excluir(backend.Domains.Usuario)">
+            <summary>
+            Deleta um usuario existente
+            </summary>
+            <param name="usuario">Objeto usuario com os dados que serão deletados</param>
+            <returns>Retorna um usuario deletado</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.FiltrarPorNome(System.String)">
+            <summary>
+            Lista todos os usuarios que atendem ao filtro
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de usuarios filtrados</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.Ordenar">
+            <summary>
+            Lista todos os usuarios de forma ordenada
+            </summary>
+            <returns>Retorna uma lista de usuarios ordenada</returns>
+        </member>
+        <member name="M:backend.Interfaces.IUsuarioRepository.RealizarLogin(System.String,System.String)">
+            <summary>
+            Realiza login de um usuário
+            </summary>
+            <param name="email">Email informado pelo usuário</param>
+            <param name="senha">Senha informada pelo usuário</param>
+            <returns>Retorna um usuário correspondente</returns>
+        </member>
+        <member name="T:backend.Repositories.CategoriaRepository">
+            <summary>
+            Classe responsável pela implementação dos métodos da categoria
+            Herda os métodos definidos na Interface
+            </summary>
+        </member>
+        <member name="T:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController">
+            <summary>
+            Classe responsável pelo controle de endpoints, chamada dos métodos e autorização da aplicação
+            Definimos a rota do controller, que é um controller de API e que o resultado das requisições é em formato JSON
+            </summary>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController.Get">
+            <summary>
+            Lista todas as categorias
+            </summary>
+            <returns>Retorna uma lista de categorias</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController.GetByID(System.Int32)">
+            <summary>
+            Busca uma categoria através do seu ID
+            </summary>
+            <param name="id">Identificador único da categoria</param>
+            <returns>Retorna uma categoria buscada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController.Post(backend.Domains.Categoria)">
+            <summary>
+            Cadastra uma nova categoria
+            </summary>
+            <param name="categoria">Nome da categoria que será cadastrada</param>
+            <returns>Retorna a categoria que foi cadastrada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController.Put(System.Int32,backend.Domains.Categoria)">
+            <summary>
+            Atualiza os dados de uma categoria cadastrada
+            </summary>
+            <param name="id">Identificador único da categoria que será atualizada</param>
+            <param name="categoria">Objeto categoria com os dados que serão atualizados</param>
+            <returns>Retorna um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController.Delete(System.Int32)">
+            <summary>
+            Deleta uma categoria cadastrada buscando através do seu ID
+            </summary>
+            <param name="id">Identificador único da categoria que será deletada</param>
+            <returns>Retorna os dados da categoria que foi deletada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController.GetFiltrar(System.String)">
+            <summary>
+            Filtra as categorias através do nome
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de categorias filtradas</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.CategoriasController.GetOrdenar">
+            <summary>
+            Ordena uma lista de categorias
+            </summary>
+            <returns>Retorna uma lista de categorias ordenada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.EventosController.Get">
+            <summary>
+            Lista todos os eventos
+            </summary>
+            <returns>Retorna uma lista de eventos</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.EventosController.Get(System.Int32)">
+            <summary>
+            Busca um evento através do seu ID
+            </summary>
+            <param name="id">Identificador único do evento buscado</param>
+            <returns>Retorna um evento buscado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.EventosController.Post(backend.Domains.Evento)">
+            <summary>
+            Cadastra um novo evento
+            </summary>
+            <param name="evento">Objeto evento que será cadastrado</param>
+            <returns>Retorna os dados do evento cadastrado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.EventosController.Put(System.Int32,backend.Domains.Evento)">
+            <summary>
+            Atualiza um evento existente
+            </summary>
+            <param name="id">Identificador único do evento que será atualizado</param>
+            <param name="evento">Dados do evento que serão atualizados</param>
+            <returns>Retorna status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.EventosController.Delete(System.Int32)">
+            <summary>
+            Deleta um evento existente
+            </summary>
+            <param name="id">Identificador único do evento que será deletado</param>
+            <returns>Retorna os dados do evento que foi deletado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.EventosController.GetFiltrar(System.String)">
+            <summary>
+            Filtra os eventos através do nome
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de eventos filtrados</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.EventosController.GetOrdenar">
+            <summary>
+            Ordena uma lista de eventos
+            </summary>
+            <returns>Retorna uma lista de eventos ordenada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.LocalizacoesController.Get">
+            <summary>
+            Lista todas as localizações
+            </summary>
+            <returns>Retorna uma lista de localizações</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.LocalizacoesController.Get(System.Int32)">
+            <summary>
+            Busca uma localização através do seu ID
+            </summary>
+            <param name="id">Identificador único da localização que será buscada</param>
+            <returns>Retorna uma localização buscada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.LocalizacoesController.Post(backend.Domains.Localizacao)">
+            <summary>
+            Cadastra uma nova localização
+            </summary>
+            <param name="localizacao">Objeto localização que será cadastrado</param>
+            <returns>Retorna os dados da localização cadastrada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.LocalizacoesController.Put(System.Int32,backend.Domains.Localizacao)">
+            <summary>
+            Atualiza uma localização existente
+            </summary>
+            <param name="id">Identificador único da localização que será atualizada</param>
+            <param name="localizacao">Objeto localização com os dados que serão atualizados</param>
+            <returns>Retorna um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.LocalizacoesController.Delete(System.Int32)">
+            <summary>
+            Deleta uma localização através do seu ID
+            </summary>
+            <param name="id">Identificador único da localização que será deletada</param>
+            <returns>Retorna os dados da localização deletada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.LocalizacoesController.GetFiltrar(System.String)">
+            <summary>
+            Filtra as localizações através da Razão Social
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de localizações filtradas</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.LocalizacoesController.GetOrdenar">
+            <summary>
+            Ordena uma lista de localizações
+            </summary>
+            <returns>Retorna uma lista de localizações ordenada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.PresencasController.Get">
+            <summary>
+            Lista todas as presenças
+            </summary>
+            <returns>Retorna uma lista de presenças</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.PresencasController.Get(System.Int32)">
+            <summary>
+            Busca uma presença através do seu ID
+            </summary>
+            <param name="id">Identificador único da presença buscada</param>
+            <returns>Retorna uma presença buscada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.PresencasController.Post(backend.Domains.Presenca)">
+            <summary>
+            Cadastra uma nova presença
+            </summary>
+            <param name="presenca">Objeto presença que será cadastrado</param>
+            <returns>Retorna os dados da presença cadastrada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.PresencasController.Put(System.Int32,backend.Domains.Presenca)">
+            <summary>
+            Atualiza uma presença cadastrada
+            </summary>
+            <param name="id">Identificador único da presença que será atualizada</param>
+            <param name="presenca">Objeto presença com os dados que serão atualizados</param>
+            <returns>Retorna um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.PresencasController.Delete(System.Int32)">
+            <summary>
+            Deleta uma presença através do seu ID
+            </summary>
+            <param name="id">Identificador único da presença que será deletada</param>
+            <returns>Retorna os dados da presença deletada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.PresencasController.GetFiltrar(System.String)">
+            <summary>
+            Filtra as presenças através do nome do usuário
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de presenças filtrada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.PresencasController.GetOrdenar">
+            <summary>
+            Ordena uma lista de presenças
+            </summary>
+            <returns>Retorna uma lista de presenças ordenada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.TiposUsuarioController.Get">
+            <summary>
+            Lista todos os tipos de usuário
+            </summary>
+            <returns>Retorna uma lista de com os tipos de usuário</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.TiposUsuarioController.Get(System.Int32)">
+            <summary>
+            Busca um tipo de usuário através do seu ID
+            </summary>
+            <param name="id">Identificador único do tipo de usuário que será buscado</param>
+            <returns>Retorna um tipo de usuário buscado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.TiposUsuarioController.Post(backend.Domains.TipoUsuario)">
+            <summary>
+            Cadastra um novo tipo de usuário
+            </summary>
+            <param name="tipoUsuario">Objeto tipoUsuario que será cadastrado</param>
+            <returns>Retorna os dados do tipo usuário que foi cadastrado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.TiposUsuarioController.Put(System.Int32,backend.Domains.TipoUsuario)">
+            <summary>
+            Atualiza um tipo de usuário existente
+            </summary>
+            <param name="id">Identificador único do tipo de usuário que será cadastrado</param>
+            <param name="tipoUsuario">Objeto tipoUsuario com os dados que serão atualizado</param>
+            <returns>Retorna um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.TiposUsuarioController.Delete(System.Int32)">
+            <summary>
+            Deleta um tipo de usuário através do seu ID
+            </summary>
+            <param name="id">Identificador único do tipo de usuário que será deletado</param>
+            <returns>Retorna os dados do tipo de usuário deletado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.TiposUsuarioController.GetFiltrar(System.String)">
+            <summary>
+            Filtra os tipos de usuário pelo nome
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de tipos de usuário filtrada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.TiposUsuarioController.GetOrdenar">
+            <summary>
+            Ordena uma lista de tipos de usuário
+            </summary>
+            <returns>Retorna uma lista de tipos de usuário ordenada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.UsuariosController.Get">
+            <summary>
+            Lista todos os usuários
+            </summary>
+            <returns>Retorna uma lista de usuários</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.UsuariosController.Get(System.Int32)">
+            <summary>
+            Busca um usuário através do seu ID
+            </summary>
+            <param name="id">Identificador único do usuário que será buscado</param>
+            <returns>Retorna um usuário buscado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.UsuariosController.Post(backend.Domains.Usuario)">
+            <summary>
+            Cadastra um novo usuário
+            </summary>
+            <param name="usuario">Objeto usuario que será cadastrado</param>
+            <returns>Retorna os dados do usuário cadastrado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.UsuariosController.Put(System.Int32,backend.Domains.Usuario)">
+            <summary>
+            Atualiza um usuário existente
+            </summary>
+            <param name="id">Identificador único do usuário que será atualizado</param>
+            <param name="usuario">Objeto usuário com os dados que serão atualizados</param>
+            <returns>Retorna um status code 204 - No Content</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.UsuariosController.Delete(System.Int32)">
+            <summary>
+            Deleta um usuário através do seu ID
+            </summary>
+            <param name="id">Identificador único do usuário que será deletado</param>
+            <returns>Retorna os dados do usuário deletado</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.UsuariosController.GetFiltrar(System.String)">
+            <summary>
+            Filtra os usuário pelo nome
+            </summary>
+            <param name="filtro">Filtro que será aplicado na busca</param>
+            <returns>Retorna uma lista de usuários filtrada</returns>
+        </member>
+        <member name="M:senai_2s2019_CodeXP_Gufos.Controllers.UsuariosController.GetOrdenar">
+            <summary>
+            Ordena uma lista de usuários
+            </summary>
+            <returns>Retorna uma lista de usuários ordenada</returns>
+        </member>
+    </members>
+</doc>

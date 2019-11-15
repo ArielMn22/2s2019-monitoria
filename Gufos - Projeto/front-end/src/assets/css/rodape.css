@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* RODAPÉ */
+.rodapePrincipal {
+  padding-top: 20px;
+  font-weight: lighter;
+}
+
+.rodapePrincipal .subtitulo {
+  color: #fff;
+}
+
+.rodapePrincipal-patrocinadores {
+  margin-top: 30px;
+  background: #ffffff;
+  padding: 20px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape-contato-titulo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.rodape-contato-mapa {
+  margin-right: 70px;
+  background-image: linear-gradient(
+      rgba(111, 71, 255, 0.5),
+      rgba(111, 71, 255, 0.3)
+    ),
+    url("https://via.placeholder.com/150");
+  width: 150px;
+  height: 150px;
+}
+
+.rodape-contato-endereco {
+  font-family: "Open Sans";
+  line-height: 30px;
+  letter-spacing: 2px;
+}
+
+.rodapePrincipal-patrocinadores .container {
+  display: flex;
+  justify-content: center;
+}
+
+.rodapePrincipal-patrocinadores-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 768px) {
+  .rodapePrincipal-patrocinadores .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodapePrincipal-patrocinadores-list {
+    margin: 0;
+    width: 100%;
+  }
+}
