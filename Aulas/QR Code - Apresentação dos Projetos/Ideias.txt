@@ -1,0 +1,6 @@
+Utilizar o site https://br.qr-code-generator.com/ para gerar os QR Codes.
+
+Possibilidades de utilização:
+	- Camiseta com QR Code estampado;
+	- Mostrador A4 de acrílico com os QR Codes de todos integrantes do grupo;
+	- Adesivos;
