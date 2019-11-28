@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { parseJwt } from "../../services/auth";
 import { Link, withRouter } from "react-router-dom";
-
+import Axios from "axios";
 import logo from "../../assets/img/icon-login.png";
 
 import "../../assets/css/login.css";
@@ -32,25 +32,51 @@ class Login extends Component {
     let config = {
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin" : "*"
+        "Access-Control-Allow-Origin": "*"
       }
     };
 
-    api.post(
-      "/login",
+    // api.post(
+    //   "/login",
+    //   {
+    //     email: this.state.email,
+    //     senha: this.state.senha
+    //   }
+    // )
+    //   .then(data => {
+    //     console.log("status", data.status);
+    //     if (data.status === 200) {
+
+    //       console.log(data);
+    //       localStorage.setItem("usuario-gufos", data.data.token);
+
+    //       //Verifica o tipo de usuário e redireciona para a página default
+    //       console.log("parse", parseJwt().permissao);
+
+    //       if (parseJwt().permissao == "Administrador") {
+    //         this.props.history.push("/eventos/cadastrar");
+    //       } else {
+    //         this.props.history.push("/eventos");
+    //       }
+    //     }
+    //   })
+    //   .catch(erro => {
+    //     this.setState({ erroMensagem: "Email ou senha inválido" });
+    //   });
+
+    Axios.post(
+      "http://localhost:5000/api/login",
       {
         email: this.state.email,
         senha: this.state.senha
       },
       config
-    )
+      )
       .then(data => {
-        console.log("status", data.status);
         if (data.status === 200) {
-          
           console.log(data);
           localStorage.setItem("usuario-gufos", data.data.token);
-          
+
           //Verifica o tipo de usuário e redireciona para a página default
           console.log("parse", parseJwt().permissao);
 

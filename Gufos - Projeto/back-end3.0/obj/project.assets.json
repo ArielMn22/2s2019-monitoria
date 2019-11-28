@@ -6532,11 +6532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aryel\\Documents\\Code-Repositories\\senai_2s2019_CodeXP\\gufos\\backend\\backend.csproj",
+      "projectUniqueName": "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Gufos - Projeto\\back-end3.0\\backend.csproj",
       "projectName": "backend",
-      "projectPath": "C:\\Users\\aryel\\Documents\\Code-Repositories\\senai_2s2019_CodeXP\\gufos\\backend\\backend.csproj",
+      "projectPath": "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Gufos - Projeto\\back-end3.0\\backend.csproj",
       "packagesPath": "C:\\Users\\aryel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aryel\\Documents\\Code-Repositories\\senai_2s2019_CodeXP\\gufos\\backend\\obj\\",
+      "outputPath": "C:\\Users\\aryel\\Documents\\Code-Repositories\\2s2019-monitoria\\Gufos - Projeto\\back-end3.0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
